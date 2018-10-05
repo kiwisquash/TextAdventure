@@ -21,13 +21,19 @@ class Player:
 
 def testPlayer(x,y):
     bob = Player(x,y)
-    print("Start from the point ("+bob.getX()+","+bob.getY()+") let's move.")
+    print("Start from the point ("+str(bob.getX())+","+str(bob.getY())+") let's move.")
     bob.moveR()
+    print("Move right.")
     bob.moveU()
+    print("Move up.")
     bob.moveR()
+    print("Move right.")
     bob.moveL()
+    print("Move left.")
     bob.moveD()
+    print("Move down.")
     bob.moveD()
-    print("End up at ("+bob.getX()+","+bob.getY()+").")
+    print("Move down.")
+    print("End up at ("+str(bob.getX())+","+str(bob.getY())+").")
 
 testPlayer(0,0)
