@@ -11,6 +11,7 @@ This is an on-going project with no end date.
 - Different types of rooms
 - items, enemies, battles
 - GUI? (distant future)
+- Key listerns? (https://stackoverflow.com/questions/11918999/key-listeners-in-python)
 
 # Time investment
 - As of now, I am planning to sink 2 hr / week on this project.
