@@ -2,6 +2,7 @@ class Player:
     def __init__(self,x=0,y=0):
         self.x = x
         self.y = y
+        self.victory = 0
     def getX(self):
         return self.x
     def getY(self):
@@ -19,12 +20,7 @@ class Player:
     def moveD(self):
         self.y-=1
     def position(self):
-        output = "("
-        output += str(self.getX())
-        output +=", "
-        output += str(self.getY())
-        output += ")"
-        return output
+        return (self.getX(),self.getY())
     def printPos(self):
         output = "Your current position is "
         output += self.position()
