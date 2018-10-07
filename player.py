@@ -26,7 +26,7 @@ class Player:
         return (self.getX(),self.getY())
     def printPos(self):
         output = "Your current position is "
-        output += self.position()
+        output += str(self.position())
         print(output)
 
 def testPlayer(x,y,nSteps):
