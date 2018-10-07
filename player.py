@@ -1,3 +1,6 @@
+import random 
+import time
+
 class Player:
     def __init__(self,x=0,y=0):
         self.x = x
@@ -30,26 +33,27 @@ class Player:
         output += self.position()
         print(output)
 
-def testPlayer(x,y):
+def testPlayer(x,y,nSteps):
     bob = Player(x,y)
     print("Start from the point ("+str(bob.getX())+","+str(bob.getY())+") let's move.")
-    bob.moveR()
-    bob.printPos()
-    bob.moveU()
-    print("Move up.")
-    bob.printPos()
-    bob.moveR()
-    print("Move right.")
-    bob.printPos()
-    bob.moveL()
-    print("Move left.")
-    bob.printPos()
-    bob.moveD()
-    print("Move down.")
-    bob.printPos()
-    bob.moveD()
-    print("Move down.")
-    bob.printPos()
-    print("End up at ("+str(bob.getX())+","+str(bob.getY())+").")
+    for i in range(nSteps):
+        time.sleep(1)
+        randVal = random.randint(0,3)
+        if randVal == 0:
+            print("Move to the right.")
+            bob.moveR()
+            bob.printPos()
+        if randVal == 1:
+            print("Move to the left.")
+            bob.moveL()
+            bob.printPos()
+        if randVal == 2:
+            print("Move to the up.")
+            bob.moveU()
+            bob.printPos()
+        if randVal == 3:
+            print("Move to the down.")
+            bob.moveD()
+            bob.printPos()
 
-testPlayer(0,3)
+testPlayer(0,0,10)
