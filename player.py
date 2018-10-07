@@ -5,7 +5,13 @@ class Player:
     def __init__(self,x=0,y=0):
         self.x = x
         self.y = y
-        self.victory = 0
+        self.victory = False
+    def getStatus(self):
+        return self.victory
+    def setStatus(self,status):
+        self.victory = status
+    def win(self):
+        self.setStatus(True)
     def getX(self):
         return self.x
     def getY(self):
@@ -52,4 +58,5 @@ def testPlayer(x,y,nSteps):
             bob.moveD()
             bob.printPos()
 
-testPlayer(0,0,10)
+if __name__ == "__main__":
+    testPlayer(0,0,10)
