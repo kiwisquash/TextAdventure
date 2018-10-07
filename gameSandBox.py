@@ -10,7 +10,7 @@ while(again=="y"):
         print("I'm sorry, I didn't understand your response.")
         print("Would you like to play? (y/n)")
         response = input()
-    if response == "y": # Game start
+    if response == "y": 
         bob = Player()
         while (bob.getStatus() == False): # Game start
             print("Do you want to win?")
