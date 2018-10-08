@@ -1,6 +1,7 @@
+from abc import ABC
 import random
 
-class Room:
+class Room(ABC):
     def __init__(self,message):
         self.message = message
     def getMessage(self):
@@ -25,4 +26,4 @@ for i in range(3):
         if j == exitY and i == exitX:
             map[i].append(Exit("This is the exit!"))
         else:
-            map[i].append(Room("This is a room. Nothing special here))
+            map[i].append(Room("This is a room. Nothing special here"))
