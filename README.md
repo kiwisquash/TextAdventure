@@ -11,6 +11,8 @@ This is an on-going project with no end date.
 - Different types of rooms
 - items, enemies, battles
 - GUI? (distant future)
+    - Curses? NCurses? Pygame? tkinters?
+    - Curses seem closest to what I am looking for.
 - Key listeners? (https://stackoverflow.com/questions/11918999/key-listeners-in-python)
 - Some way to add pauses in a meaningful way.
     - Currently, everything is too fast.
